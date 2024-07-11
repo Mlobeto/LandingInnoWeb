@@ -63,7 +63,7 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
     formValues.description = description;
 
     try {
-      const response = await fetch('https://innoweb.azurewebsites.net/emails/send', {
+      const response = await fetch('https://landing-back-five.vercel.app/emails/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

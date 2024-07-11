@@ -1,0 +1,114 @@
+{
+  "Hero": {
+    "title": "SME MANAGEMENT SOLUTIONS",
+    "subtitle1": "Il sistema di gestione completo per le PMI",
+    "subtitle2": "Che accompagna la crescita della vostra azienda",
+    "contatto": "Contattaci",
+    "piani": "Piani"
+  },
+  "TopBar": {
+    "login": "Accedi",
+    "consultas": "Consultazioni",
+    "atencion": "Assistenza Clienti",
+    "whatsapp": "WhatsApp"
+  },
+  "Works": {
+    "WeCreate":"CREIAMO PRODOTTI DIGITALI DI LIVELLO MONDIALE"
+
+  },
+  "StickyNav":{
+    "overview": "Panoramica",
+    "benefits": "Benefici",
+    "request_demo": "Richiedi una demo"
+
+  },
+  "ContactForm": {
+    "title":"Inserite i vostri dati in modo che un consulente commerciale possa contattarvi al più presto.",
+    "firstName":"Nome",
+    "familyname":"Apello",
+    "email":"E-mail",
+    "phone":"Telefono",
+    "description":"Descrizione",
+    "submit":"Inviare",
+    "back":"Indietro",
+     "comentario":"Commento",
+    "downloadPdf":"Inviare e Scaricare"
+  },
+  "FilpCardContainer": {
+
+  },
+  "Footer": {
+
+  },
+  "Header": {
+    "Servicios": "Servizi e sviluppi",
+    "Nosotros": "Chi siamo",
+    "Contacto": "Contatto",
+    "CotizaTuWeb": "Preventivo per il web"
+  },
+  "QuotteWizard": {},
+  "Step1": {
+    "title": "Di che tipo di sito web hai bisogno?",
+    "Institucional": "Sito web istituzionale",
+    "E-commerce": "E-commerce o catalogo",
+    "Landing": "Pagina di Atterraggio",
+    "Complejo":"Sito web complesso",
+    "button": "Prossimo"
+  },
+  "Step2":{
+  "title": "Di che tipo di sito web hai bisogno?",
+  "button": "Prossimo",
+  "HaveDomain": "Do you have the Domain for your website?",
+  "NeedHosting": "Avete bisogno di hosting e dominio??"
+ },
+  "Step3": {
+    "title": "Integrazioni",
+    "Blog": "Blog",
+     "Catalogo": "catalog",
+     "Delivery": "Delivery",
+     "Turnos": "Shift management",
+     "CRM": "CRM",
+     "Payments": "Payments",
+     "WhatsApp": "Whatsapp",
+     "Bot": "Bot"
+  },
+  "Step4": {},
+ 
+  "TabbedImages": {
+    "landing": "Landing",
+    "eCommerce": "Il commercio elettronico",
+    "simple": "Semplice Web",
+    "complex": "Complesso Web",
+    "escalability": "Scalabilità",
+    "LandingText": "In Innoweb Solutions, creiamo landing page ottimizzate e attraenti che catturano l'attenzione dei tuoi visitatori fin dal primo momento. Progettiamo pagine con un chiaro focus sulla conversione, assicurandoci che ogni elemento sia posizionato strategicamente per massimizzare i tuoi risultati. Dalla presentazione visiva sorprendente alla navigazione intuitiva, le nostre landing page sono lo strumento perfetto per potenziare le tue campagne di marketing e catturare lead efficaci.",
+    "EcommerceText": "Trasforma la tua idea di negozio online in realtà con le nostre soluzioni di e-commerce personalizzate. Ci occupiamo di tutto, dal design intuitivo e attraente all'integrazione di sistemi di pagamento sicuri e funzionalità avanzate. Che tu venda prodotti fisici o digitali, la nostra esperienza nello sviluppo di e-commerce garantisce una piattaforma robusta e scalabile che cresce insieme al tuo business, fornendoti gli strumenti necessari per gestire in modo efficiente il tuo inventario, ordini e clienti.",
+    "SimpleText": "Se hai bisogno di una presenza online efficace e veloce, le nostre soluzioni di pagine web semplici sono perfette per te. Progettiamo siti web che combinano estetica e funzionalità, offrendo ai tuoi visitatori un'esperienza utente piacevole e senza complicazioni. Ideale per piccole imprese, professionisti indipendenti e progetti personali, le nostre pagine web sono ottimizzate per caricarsi rapidamente e adattarsi a tutti i dispositivi.",
+    "ComplexText": "Per progetti che richiedono funzionalità avanzate e personalizzazione completa, Innoweb Solutions offre sviluppi web complessi su misura. Lavoriamo a stretto contatto con te per comprendere le tue esigenze e obiettivi specifici, fornendo soluzioni innovative e tecnicamente solide. Dai sistemi di gestione dei contenuti (CMS) personalizzati alle applicazioni web interattive, il nostro team di esperti è pronto ad affrontare qualsiasi sfida e portare il tuo progetto al livello successivo.",
+    "ScalabilityText": "In Innoweb Solutions, non solo creiamo il tuo sito web, ma ti accompagniamo in ogni passo della tua crescita digitale. Offriamo assistenza tecnica continua, miglioramenti periodici e ottimizzazioni per assicurarci che la tua piattaforma sia sempre al massimo delle prestazioni. Comprendiamo che il mondo digitale è in continua evoluzione, quindi le nostre soluzioni sono progettate per essere scalabili, permettendoti di aggiungere nuove funzionalità e adattarti alle nuove tendenze e richieste del mercato.",
+    "DefaultText": "In Innoweb Solutions, creiamo landing page ottimizzate e attraenti che catturano l'attenzione dei tuoi visitatori fin dal primo momento. Progettiamo pagine con un chiaro focus sulla conversione, assicurandoci che ogni elemento sia posizionato strategicamente per massimizzare i tuoi risultati. Dalla presentazione visiva sorprendente alla navigazione intuitiva, le nostre landing page sono lo strumento perfetto per potenziare le tue campagne di marketing e catturare lead efficaci."
+  },
+  "Bottons": {
+    "WhatCan": "CHE COSA POSSIAMO FARE PER LA VOSTRA AZIENDA?"
+  },
+  "FlipCard":
+  {
+      "Planificación": "Pianificazione",
+      "Primer Paso": "Prima fase",
+      "Recolección de Requisitos y Pianificazione": "Raccolta dei requisiti e pianificazione",
+      "Desarrollo": "Sviluppo",
+      "Segundo Paso": "Seconda fase",
+      "Implementación de Funcionalidades": "Implementazione delle funzionalità",
+      "Pruebas Continuas": "Test continuo",
+      "Lanzamiento": "Lancio",
+      "Tercer Paso": "Terza fase",
+      "Pruebas Finales": "Collaudo finale",
+      "Preparación de Producción": "Prontezza di produzione",
+      "Despliegue": "Distribuzione",
+      "Mantenimiento": "Manutenzione",
+      "Cuarto Paso": "Quarta fase",
+      "Monitoreo Continuo": "Monitoraggio continuo",
+      "Actualizaciones Regulares": "Aggiornamenti regolari",
+      "Soporte Técnico": "Supporto tecnico",
+      "Más Detalles": "Altri dettagli"
+    }
+}

@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "title": "MANAGEMENT SOLUTIONS FOR YOUR BUSINESS",
+    "subtitle1": "The integrated management system for SMEs",
+    "subtitle2": "That accompanies the growth of your business",
+    "contact": "Contact Us",
+    "plans": "Plans"
+  },
+  "TopBar":{
+    "login": "LogIn",
+    "consultas": "Inquiries",
+    "atencion": "Customer Service",
+    "whatsapp": "WhatsApp"
+  },
+  "Works": {
+    "WeCreate":"WE CREATE WORLD-CLASS DIGITAL PRODUCTS"
+  },
+  "StickyNav":{
+    "overview": "Overview",
+    "benefits": "Benefits",
+    "request_demo": "Request a Demo"
+  },
+  "ContactForm": {
+    "title":"Enter your information so that a sales consultant can contact you as soon as possible.",
+    "firstName":"First Name",
+    "familyname":"Family Name",
+    "email":"E-mail",
+    "phone":"Phone",
+    "description":"Description",
+    "submit":"Submit",
+    "back":"Back",
+    "comentario":"Coments",
+    "downloadPdf":"Send and Download"
+    
+  },
+
+  "FilpCardContainer": {
+
+  },
+  "Footer": {
+
+  },
+  "Header": {
+    "Servicios": "Services and Developments",
+    "Nosotros": "We",
+    "Contacto": "Contact Us",
+    "CotizaTuWeb": "Quote Your Web"
+  },
+  "QuotteWizard": {},
+  "Step1": {
+    "title": "What type of website do you need?",
+    "Institucional": "Institutional WebSite",
+    "E-commerce": "E-commerce or Catalog",
+    "Landing": "Landing Page",
+    "Complejo":"Complex WebSite",
+    "button": "Next"
+  },
+  "Step2":{
+  "title": "Do you need Hosting and Domain for your Web?",
+  "button": "Next",
+  "HaveDomain": "Do you have the Domain for your website?",
+  "NeedHosting": "Do you need Hosting and domain?"
+ },
+  "Step3": {
+    "title": "Integrations",
+    "Blog": "Blog",
+    "Catalogo": "catalog",
+    "Delivery": "Delivery",
+    "Turnos": "Shift management",
+    "CRM": "CRM",
+    "Payments": "Payments",
+    "WhatsApp": "Whatsapp",
+    "Bot": "Bot"
+
+    },
+  
+  
+  "TabbedImages": {
+    "landing": "Landing",
+    "eCommerce": "E-Commerce",
+    "simple": "Simple Web",
+    "complex": "Complex Web",
+    "escalability": "Scalability",
+    "LandingText": "At Innoweb Solutions, we create optimized and attractive landing pages that capture your visitors' attention from the first moment. We design pages with a clear focus on conversion, ensuring every element is strategically placed to maximize your results. From stunning visual presentations to intuitive navigation, our landing pages are the perfect tool to boost your marketing campaigns and capture effective leads.",
+    "EcommerceText": "Transform your online store idea into reality with our customized e-commerce solutions. We take care of everything, from intuitive and attractive design to secure payment system integrations and advanced functionalities. Whether you sell physical or digital products, our expertise in e-commerce development ensures a robust and scalable platform that grows with your business, providing you with the tools to efficiently manage your inventory, orders, and customers.",
+    "SimpleText": "If you need an effective and quick online presence, our simple web page solutions are perfect for you. We design websites that combine aesthetics and functionality, offering your visitors a pleasant and hassle-free user experience. Ideal for small businesses, independent professionals, and personal projects, our web pages are optimized to load quickly and adapt to all devices.",
+    "ComplexText": "For projects requiring advanced functionalities and complete customization, Innoweb Solutions offers complex custom web development. We work closely with you to understand your specific needs and objectives, delivering innovative and technically solid solutions. From customized content management systems (CMS) to interactive web applications, our team of experts is ready to tackle any challenge and take your project to the next level.",
+    "ScalabilityText": "At Innoweb Solutions, we not only create your website but also accompany you at every step of your digital growth. We offer continuous technical support, periodic improvements, and optimizations to ensure your platform is always performing at its best. We understand that the digital world is constantly evolving, so our solutions are designed to be scalable, allowing you to add new functionalities and adapt to new market trends and demands.",
+    "DefaultText": "At Innoweb Solutions, we create optimized and attractive landing pages that capture your visitors' attention from the first moment. We design pages with a clear focus on conversion, ensuring every element is strategically placed to maximize your results. From stunning visual presentations to intuitive navigation, our landing pages are the perfect tool to boost your marketing campaigns and capture effective leads."
+  },
+  "Bottons": {
+    "WhatCan": "WHAT CAN WE DO FOR YOUR BUSINESS?"
+  },
+  "FlipCard":
+  {
+      "Planificación": "Planning",
+      "Primer Paso": "First Step",
+      "Recolección de Requisitos y Planificación": "RequirementsGathering and Planning",
+      "Desarrollo": "Development",
+      "Segundo Paso": "Second Step",
+      "Implementación de Funcionalidades": "Implementation of Functionalities",
+      "Pruebas Continuas": "Continuous Testing",
+      "Lanzamiento": "Launching",
+      "Tercer Paso": "Third Step",
+      "Pruebas Finales": "Final Tests",
+      "Preparación de Producción": "Production Readiness",
+      "Despliegue": "Despliegue",
+      "Mantenimiento": "Deployment",
+      "Cuarto Paso": "Fourth Step",
+      "Monitoreo Continuo": "Continuous Monitoring",
+      "Actualizaciones Regulares": "Regular Updates",
+      "Soporte Técnico": "Technical Support",
+      "Más Detalles": "More Details"
+    }
+    
+}

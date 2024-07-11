@@ -1,0 +1,114 @@
+  {
+    "hero": {
+      "title": "SOLUCIONES DE GESTIÓN PARA PYMES",
+      "subtitle1": "El sistema de gestión integral para Pymes",
+      "subtitle2": "Que acompaña el crecimiento de tu negocio",
+      "contact": "Contáctanos",
+      "plans": "Planes"
+    },
+"TopBar":{
+    "login": "LogIn",
+    "consultas": "Consultas",
+    "atencion": "Atencion al Cliente",
+    "whatsapp": "whatsapp"
+  },
+  "Works": {
+    "WeCreate":"CREAMOS PRODUCTOS DIGITALES DE PRIMERA CLASE"
+
+  },
+"StickyNav":{
+    "overview":"Vision General",
+    "benefits":"Beneficios",
+    "request_demo":"Solicite una Demo"
+
+  },
+"ContactForm": {
+    "title":"Completá tus datos para que un asesor comercial se comunique con vos a la brevedad.",
+    "firstName":"Nombre",
+    "familyname":"Apellido",
+    "email":"Correo Electrónico",
+    "phone":"Telefono",
+    "description":"Descripción",
+    "submit":"Enviar",
+    "comentario":"Commento",
+    "downloadPdf":"Envia y Descarga"
+  },
+ "FilpCardContainer": {
+
+ },
+ "Footer":{
+
+ },
+ "Header":{
+  "Servicios":"Servicios y Desarrollos",
+  "Nosotros":"Nosotros",
+  "Contacto": "Contacto",
+  "CotizaTuWeb": "Cotiza Tu Web"
+ },
+ "QuotteWizard":{},
+ "Step1": {
+    "title": "¿Qué tipo de sitio web necesitas?",
+    "Institucional": "Sitio Web Institucional",
+    "E-commerce": "E-commerce o catálogo",
+    "Landing": "Landing page",
+    "Complejo":"Sitio web complejo",
+    "button": "Siguiente"
+  },
+ "Step2":{
+  "title": "¿Necesitas Hosting y Dominio para tu Web?",
+  "button": "Siguiente",
+  "HaveDomain": "Necesitas el Dominio para tu Web?",
+  "NeedHosting": "Necesitas Hosting y Dominio?"
+ },
+ "Step3":{
+  "title": "Integraciones",
+   "Blog": "Blog",
+    "Catalogo": "catalog",
+    "Delivery": "Delivery",
+    "Turnos": "Shift management",
+    "CRM": "CRM",
+    "Payments": "Payments",
+    "WhatsApp": "Whatsapp",
+    "Bot": "Bot"
+ },
+
+
+ "TabbedImages":{
+  "landing": "Landing",
+  "eCommerce": "E-Commerce",
+  "simple": "Simple Web",
+  "complex": "Web Compleja",
+  "escalability":"Escalabilidad",
+  "LandingText": "En Innoweb Solutions, creamos landing pages optimizadas y atractivas que capturan la atención de tus visitantes desde el primer momento. Diseñamos páginas con un enfoque claro en la conversión, asegurando que cada elemento esté estratégicamente colocado para maximizar tus resultados. Desde una presentación visual deslumbrante hasta una navegación intuitiva, nuestras landing pages son la herramienta perfecta para impulsar tus campañas de marketing y capturar leads efectivos..",
+  "EcommerceText": "Transforma tu idea de tienda online en una realidad con nuestras soluciones de e-commerce personalizadas. Nos encargamos de todo, desde el diseño intuitivo y atractivo hasta la integración de sistemas de pago seguros y funcionalidades avanzadas. Ya sea que vendas productos físicos o digitales, nuestra experiencia en desarrollo de e-commerce garantiza una plataforma robusta y escalable que crecerá junto a tu negocio, brindándote las herramientas necesarias para administrar tu inventario, pedidos y clientes de manera eficiente.",
+  "SimpleText":"Si necesitas una presencia online efectiva y rápida, nuestras soluciones de páginas web simples son perfectas para ti. Diseñamos sitios web que combinan estética y funcionalidad, ofreciendo a tus visitantes una experiencia de usuario agradable y sin complicaciones. Ideal para pequeñas empresas, profesionales independientes y proyectos personales, nuestras páginas web están optimizadas para cargar rápidamente y adaptarse a todos los dispositivos.",
+  "ComplexText":"Para proyectos que requieren funcionalidades avanzadas y personalización completa, Innoweb Solutions ofrece desarrollos web complejos a medida. Trabajamos en estrecha colaboración contigo para entender tus necesidades y objetivos específicos, entregando soluciones innovadoras y técnicamente sólidas. Desde sistemas de gestión de contenido (CMS) personalizados hasta aplicaciones web interactivas, nuestro equipo de expertos está listo para afrontar cualquier desafío y llevar tu proyecto al siguiente nivel.",
+  "ScalabilityText":"En Innoweb Solutions, no solo creamos tu sitio web, sino que también te acompañamos en cada paso de tu crecimiento digital. Ofrecemos asistencia técnica continua, mejoras periódicas y optimizaciones para asegurarnos de que tu plataforma siempre esté en su mejor rendimiento. Entendemos que el mundo digital está en constante evolución, por lo que nuestras soluciones están diseñadas para ser escalables, permitiéndote añadir nuevas funcionalidades y adaptarte a las nuevas tendencias y demandas del mercado.",
+  "DefaultText":"En Innoweb Solutions, creamos landing pages optimizadas y atractivas que capturan la atención de tus visitantes desde el primer momento. Diseñamos páginas con un enfoque claro en la conversión, asegurando que cada elemento esté estratégicamente colocado para maximizar tus resultados. Desde una presentación visual deslumbrante hasta una navegación intuitiva, nuestras landing pages son la herramienta perfecta para impulsar tus campañas de marketing y capturar leads efectivos.."
+ },
+ "Bottons":{
+ "WhatCan": "QUE PODEMOS HACER POR TU NEGOCIO?"
+ },
+ "FlipCard":
+ {
+     "Planificación": "Planificación",
+     "Primer Paso": "Primer Paso",
+     "Recolección de Requisitos y Planificación": "Recolección de Requisitos y Planificación",
+     "Desarrollo": "Desarrollo",
+     "Segundo Paso": "Segundo Paso",
+     "Implementación de Funcionalidades": "Implementación de Funcionalidades",
+     "Pruebas Continuas": "Pruebas Continuas",
+     "Lanzamiento": "Lanzamiento",
+     "Tercer Paso": "Tercer Paso",
+     "Pruebas Finales": "Pruebas Finales",
+     "Preparación de Producción": "Preparación de Producción",
+     "Despliegue": "Despliegue",
+     "Mantenimiento": "Mantenimiento",
+     "Cuarto Paso": "Cuarto Paso",
+     "Monitoreo Continuo": "Monitoreo Continuo",
+     "Actualizaciones Regulares": "Actualizaciones Regulares",
+     "Soporte Técnico": "Soporte Técnico",
+     "Más Detalles": "Más Detalles"
+   }
+}
+  

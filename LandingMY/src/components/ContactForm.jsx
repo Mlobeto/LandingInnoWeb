@@ -63,7 +63,7 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
     formValues.description = description;
 
     try {
-      const response = await fetch('https://landinginnoweb.onrender.com', {
+      const response = await fetch('https://landinginnoweb.onrender.com/emails/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

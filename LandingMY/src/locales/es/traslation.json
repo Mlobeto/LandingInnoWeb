@@ -1,6 +1,6 @@
   {
     "hero": {
-      "title": "SOLUCIONES DE GESTIÓN PARA PYMES",
+      "title": "SOLUCIONES DE GESTIÓN PARA TU NEGOCIO",
       "subtitle1": "El sistema de gestión integral para Pymes",
       "subtitle2": "Que acompaña el crecimiento de tu negocio",
       "contact": "Contáctanos",
@@ -30,7 +30,7 @@
     "phone":"Telefono",
     "description":"Descripción",
     "submit":"Enviar",
-    "comentario":"Commento",
+    "comentario":"Comentarios",
     "downloadPdf":"Envia y Descarga"
   },
  "FilpCardContainer": {

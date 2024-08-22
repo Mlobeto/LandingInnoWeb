@@ -26,7 +26,7 @@
     "familyname":"Family Name",
     "email":"E-mail",
     "phone":"Phone",
-    "description":"Description",
+    "description":"Your selection for budget",
     "submit":"Submit",
     "back":"Back",
     "comentario":"Coments",
@@ -49,6 +49,7 @@
   "QuotteWizard": {},
   "Step1": {
     "title": "What type of website do you need?",
+    "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
     "Institucional": "Institutional WebSite",
     "E-commerce": "E-commerce or Catalog",
     "Landing": "Landing Page",
@@ -57,12 +58,14 @@
   },
   "Step2":{
   "title": "Do you need Hosting and Domain for your Web?",
+  "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
   "button": "Next",
   "HaveDomain": "Do you have the Domain for your website?",
   "NeedHosting": "Do you need Hosting and domain?"
  },
   "Step3": {
     "title": "Integrations",
+    "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
     "Blog": "Blog",
     "Catalogo": "catalog",
     "Delivery": "Delivery",
@@ -95,21 +98,18 @@
   {
       "Planificación": "Planning",
       "Primer Paso": "First Step",
-      "Recolección de Requisitos y Planificación": "RequirementsGathering and Planning",
+      "Recolección de Requisitos y Planificación": "In this phase, we meet with our clients to understand their needs and define the project objectives. We perform a detailed requirements analysis and create an action plan that includes the software architecture, the technologies to be used, the development schedule and the necessary resources. ",
       "Desarrollo": "Development",
       "Segundo Paso": "Second Step",
-      "Implementación de Funcionalidades": "Implementation of Functionalities",
+      "Implementación de Funcionalidades": "Using agile methodologies to maintain constant communication and ensure that the project progresses as expected. It includes frontend and backend programming, integration with APIs and databases, and the implementation of security and continuous testing.",
       "Pruebas Continuas": "Continuous Testing",
       "Lanzamiento": "Launching",
       "Tercer Paso": "Third Step",
-      "Pruebas Finales": "Final Tests",
-      "Preparación de Producción": "Production Readiness",
-      "Despliegue": "Despliegue",
+      "Pruebas Finales": "We coordinate with the customer to deploy the software in the production environment, either in the cloud or on local servers. We make sure everything works correctly and provide training to the customer if necessary.",
       "Mantenimiento": "Deployment",
       "Cuarto Paso": "Fourth Step",
-      "Monitoreo Continuo": "Continuous Monitoring",
-      "Actualizaciones Regulares": "Regular Updates",
-      "Soporte Técnico": "Technical Support",
+      "Monitoreo Continuo": "Our goal is to provide ongoing support to keep the application up-to-date and aligned with long-term business objectives.",
+      
       "Más Detalles": "More Details"
     }
     

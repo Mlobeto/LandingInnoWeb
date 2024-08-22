@@ -19,6 +19,9 @@ export const theme = {
       textWhite: "white",
       footer: "#49465a"
     },
+    fontFamily: {
+        nunito: ['Nunito', 'sans-serif'], // Definir la fuente Nunito
+      },
   },
 };
 export const plugins = [];

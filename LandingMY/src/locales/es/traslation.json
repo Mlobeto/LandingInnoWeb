@@ -28,7 +28,7 @@
     "familyname":"Apellido",
     "email":"Correo Electrónico",
     "phone":"Telefono",
-    "description":"Descripción",
+    "description":"Tu selección para presupuesto",
     "submit":"Enviar",
     "comentario":"Comentarios",
     "downloadPdf":"Envia y Descarga"
@@ -48,6 +48,7 @@
  "QuotteWizard":{},
  "Step1": {
     "title": "¿Qué tipo de sitio web necesitas?",
+    "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
     "Institucional": "Sitio Web Institucional",
     "E-commerce": "E-commerce o catálogo",
     "Landing": "Landing page",
@@ -63,13 +64,13 @@
  "Step3":{
   "title": "Integraciones",
    "Blog": "Blog",
-    "Catalogo": "catalog",
-    "Delivery": "Delivery",
-    "Turnos": "Shift management",
+    "Catalogo": "Catálogo",
+    "Delivery": "Plataforma de Envios",
+    "Turnos": "Gestión de Turnos",
     "CRM": "CRM",
     "Payments": "Payments",
-    "WhatsApp": "Whatsapp",
-    "Bot": "Bot"
+    "WhatsApp": "WhatsAapp",
+    "Bot": "Bot Personalizado"
  },
 
 
@@ -93,21 +94,18 @@
  {
      "Planificación": "Planificación",
      "Primer Paso": "Primer Paso",
-     "Recolección de Requisitos y Planificación": "Recolección de Requisitos y Planificación",
+     "Recolección de Requisitos y Planificación": "En esta fase, nos reunimos con nuestros clientes para entender sus necesidades y definir los objetivos del proyecto. Realizamos un análisis detallado de los requisitos y creamos un plan de acción que incluye la arquitectura del software, las tecnologías a utilizar, el cronograma de desarrollo y los recursos necesarios. ",
      "Desarrollo": "Desarrollo",
      "Segundo Paso": "Segundo Paso",
-     "Implementación de Funcionalidades": "Implementación de Funcionalidades",
+     "Implementación de Funcionalidades": "Utilizamos metodologías ágiles para mantener una comunicación constante y asegurarnos de que el proyecto avance según lo esperado. Incluye la programación de frontend, backend, integración con APIs y bases de datos, y la implementación de seguridad y pruebas continuas.",
      "Pruebas Continuas": "Pruebas Continuas",
      "Lanzamiento": "Lanzamiento",
      "Tercer Paso": "Tercer Paso",
-     "Pruebas Finales": "Pruebas Finales",
-     "Preparación de Producción": "Preparación de Producción",
-     "Despliegue": "Despliegue",
+     "Pruebas Finales": "Coordinamos con el cliente para desplegar el software en el entorno de producción, ya sea en la nube o en servidores locales. Nos aseguramos de que todo funcione correctamente y proporcionamos capacitación al cliente si es necesario.",
      "Mantenimiento": "Mantenimiento",
      "Cuarto Paso": "Cuarto Paso",
-     "Monitoreo Continuo": "Monitoreo Continuo",
-     "Actualizaciones Regulares": "Actualizaciones Regulares",
-     "Soporte Técnico": "Soporte Técnico",
+     "Monitoreo Continuo": "Nuestro objetivo es proporcionar soporte continuo para que la aplicación se mantenga actualizada y alineada con los objetivos del negocio a largo plazo.",
+
      "Más Detalles": "Más Detalles"
    }
 }

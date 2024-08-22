@@ -30,9 +30,10 @@ const Step2 = ({ onNext, onBack, totalCost }) => {
 
   return (
     <div className="flex flex-col items-center p-4 md:p-30">
-      <h2 className="text-[40px] md:text-[40px] font-bold text-WHITE p-20">
+      <h2 className="text-[40px] md:text-[40px] font-bold text-WHITE p-10">
         {t("Step2.title")}
       </h2>
+      <h2 className="text-[20px] md:text-[20px] font-bold text-secondary p-4">{t('Step2.subtitle')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div
           className={`p-6 border rounded-lg cursor-pointer ${

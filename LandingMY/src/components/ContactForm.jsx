@@ -1,4 +1,4 @@
-import { forwardRef, useRef } from 'react';
+import { forwardRef, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import jsPDF from 'jspdf';
@@ -8,11 +8,11 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
   const { t } = useTranslation();
   const { option1, option2, option3, totalCost } = quoteData || {};
 
-  const description = `
+  const [description, setDescription] = useState(`
     Tipo De Página: ${option1 || "Item no Seleccionado"}, 
     Hosting: ${option2 || "Item no Seleccionado"}, 
     Integraciones: ${option3?.length > 0 ? option3.join(' -- ') : "Item no Seleccionado"}, 
-    Costo total: $${totalCost || "Item no Seleccionado"}`;
+    Costo total: $${totalCost || "Item no Seleccionado"}`);
 
   const formRef = useRef(null);
 
@@ -74,6 +74,10 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
       if (response.ok) {
         handleDownloadPDF();
         alert('Formulario enviado con éxito');
+        alert('Te contactaremos a la brevedad');
+
+        // Limpiar el campo de descripción
+        setDescription('');
       } else {
         alert('Error al enviar el formulario');
       }

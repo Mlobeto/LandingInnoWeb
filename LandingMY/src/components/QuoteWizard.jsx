@@ -16,7 +16,6 @@ const QuoteWizard = ({ setQuoteData }) => {
   const handleNext = (data) => {
     const updatedData = { ...formData, ...data };
 
-    // Calculate total cost based on selected options
     let totalCost = 0;
 
     // Step 1 costs
@@ -49,7 +48,7 @@ const QuoteWizard = ({ setQuoteData }) => {
         break;
     }
 
-    // Step 3 costs
+    
     totalCost += updatedData.option3.reduce((acc, option) => {
       switch (option) {
         case 'Payments':
@@ -65,8 +64,8 @@ const QuoteWizard = ({ setQuoteData }) => {
 
     updatedData.totalCost = totalCost;
     console.log('Updated formData:', updatedData);
-    setFormData(updatedData); // Update formData state
-    setQuoteData(updatedData); // Pass updated data to parent component
+    setFormData(updatedData); 
+    setQuoteData(updatedData); 
 
     setCurrentStep(currentStep + 1); // Move to next step
   };
@@ -75,8 +74,6 @@ const QuoteWizard = ({ setQuoteData }) => {
     setCurrentStep(currentStep - 1);
   };
 
-  console.log('Current step:', currentStep);
-  console.log('Form data:', formData);
 
   return (
     <div className="w-full p-9">

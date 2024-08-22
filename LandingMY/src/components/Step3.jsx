@@ -56,9 +56,10 @@ const Step3 = ({ onNext, onBack, totalCost }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-[20px] md:text-[20px] font-bold text-secondary p-20">
+      <h2 className="text-[20px] md:text-[20px] font-bold text-secondary p-10">
         {t('Step3.title')}
       </h2>
+      <h2 className="text-[20px] md:text-[20px] font-bold text-secondary p-4">{t('Step3.subtitle')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {options.map(option => (
           <div

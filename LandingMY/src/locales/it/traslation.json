@@ -28,7 +28,7 @@
     "familyname":"Apello",
     "email":"E-mail",
     "phone":"Telefono",
-    "description":"Descrizione",
+    "description":"Selezione del budget",
     "submit":"Inviare",
     "back":"Indietro",
      "comentario":"Commento",
@@ -94,21 +94,18 @@
   {
       "Planificación": "Pianificazione",
       "Primer Paso": "Prima fase",
-      "Recolección de Requisitos y Pianificazione": "Raccolta dei requisiti e pianificazione",
+      "Recolección de Requisitos y Pianificazione": "In questa fase incontriamo i nostri clienti per comprendere le loro esigenze e definire gli obiettivi del progetto. Eseguiamo un'analisi dettagliata dei requisiti e creiamo un piano d'azione che comprende l'architettura del software, le tecnologie da utilizzare, il calendario di sviluppo e le risorse necessarie. ",
       "Desarrollo": "Sviluppo",
       "Segundo Paso": "Seconda fase",
-      "Implementación de Funcionalidades": "Implementazione delle funzionalità",
+      "Implementación de Funcionalidades": "Utilizziamo metodologie agili per mantenere una comunicazione costante e garantire che il progetto proceda come previsto. Include la programmazione frontend e backend, l'integrazione con API e database e l'implementazione di sicurezza e test continui",
       "Pruebas Continuas": "Test continuo",
       "Lanzamiento": "Lancio",
       "Tercer Paso": "Terza fase",
-      "Pruebas Finales": "Collaudo finale",
-      "Preparación de Producción": "Prontezza di produzione",
-      "Despliegue": "Distribuzione",
+      "Pruebas Finales": "Ci coordiniamo con il cliente per distribuire il software nell'ambiente di produzione, sia nel cloud che sui server locali. Ci assicuriamo che tutto funzioni correttamente e, se necessario, forniamo formazione al cliente.",
       "Mantenimiento": "Manutenzione",
       "Cuarto Paso": "Quarta fase",
-      "Monitoreo Continuo": "Monitoraggio continuo",
-      "Actualizaciones Regulares": "Aggiornamenti regolari",
-      "Soporte Técnico": "Supporto tecnico",
+      "Monitoreo Continuo": "Il nostro obiettivo è fornire un'assistenza continua per mantenere l'applicazione aggiornata e allineata agli obiettivi aziendali a lungo termine.",
+     
       "Más Detalles": "Altri dettagli"
     }
 }

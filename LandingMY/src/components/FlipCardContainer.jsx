@@ -85,7 +85,7 @@ const FlipCardContainer = () => {
         backTitle="FlipCard.Segundo Paso"
         backSteps={[
           "FlipCard.Implementación de Funcionalidades",
-          "FlipCard.Pruebas Continuas",
+          
         ]}
         backHighlight="FlipCard.Desarrollo"
         frontColor="bg-customGreen"

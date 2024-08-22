@@ -28,11 +28,15 @@ const Step2 = ({ onNext, onBack, totalCost }) => {
 
   console.log("Total cost at Step2 mount:", totalCost);
 
+  
+
   return (
     <div className="flex flex-col items-center p-4 md:p-30">
-      <h2 className="text-[40px] md:text-[40px] font-bold text-WHITE p-10">
+    <div className="w-full  dark:bg-slate-800 flex flex-col items-center mb-5 p-3 md:p-30">
+      <h2 className="text-[20px] font-bold items-center  p-2 text-white">
         {t("Step2.title")}
       </h2>
+      </div>
       <h2 className="text-[20px] md:text-[20px] font-bold text-secondary p-4">{t('Step2.subtitle')}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div
@@ -83,14 +87,14 @@ const Step2 = ({ onNext, onBack, totalCost }) => {
           onClick={onBack}
           className="px-4 py-2 bg-gray-500 text-white rounded-md"
         >
-          {t("Back")}
+          {t("Step2.Back")}
         </button>
         <button
           onClick={handleSubmit}
           className="px-4 py-2 bg-orange-500 text-white rounded-md"
           disabled={!selectedOption}
         >
-          {t("Next")}
+          {t("Step2.Next")}
         </button>
       </div>
     </div>

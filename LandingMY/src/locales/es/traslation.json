@@ -23,7 +23,7 @@
 
   },
 "ContactForm": {
-    "title":"Completá tus datos para que un asesor comercial se comunique con vos a la brevedad.",
+    "title":"Completa tus datos para que un asesor comercial se comunique con vos a la brevedad.",
     "firstName":"Nombre",
     "familyname":"Apellido",
     "email":"Correo Electrónico",
@@ -31,7 +31,8 @@
     "description":"Tu selección para presupuesto",
     "submit":"Enviar",
     "comentario":"Comentarios",
-    "downloadPdf":"Envia y Descarga"
+    "downloadPdf":"Envia y Descarga",
+    "back": "Volver"
   },
  "FilpCardContainer": {
 
@@ -59,7 +60,9 @@
   "title": "¿Necesitas Hosting y Dominio para tu Web?",
   "button": "Siguiente",
   "HaveDomain": "Necesitas el Dominio para tu Web?",
-  "NeedHosting": "Necesitas Hosting y Dominio?"
+  "NeedHosting": "Necesitas Hosting y Dominio?",
+  "Back": "Atrás",
+  "Next": "Siguiente"
  },
  "Step3":{
   "title": "Integraciones",
@@ -68,7 +71,7 @@
     "Delivery": "Plataforma de Envios",
     "Turnos": "Gestión de Turnos",
     "CRM": "CRM",
-    "Payments": "Payments",
+    "Payments": "Plataforma de pagos",
     "WhatsApp": "WhatsAapp",
     "Bot": "Bot Personalizado"
  },

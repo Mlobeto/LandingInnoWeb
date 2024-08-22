@@ -1,6 +1,6 @@
 //import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const TopBar = ({ onConsultasClick }) => {
@@ -12,9 +12,9 @@ const TopBar = ({ onConsultasClick }) => {
         <span className="text-xl font-bold ml-8 mr-4">IS </span>
       </div>
       <div className="flex items-center space-x-4">
-        <Link to="/login" className="hover:underline">
+        {/* <Link to="/login" className="hover:underline">
           {t('TopBar.login')}
-        </Link>
+        </Link> */}
         <button onClick={onConsultasClick} className="hover:underline">
           {t('TopBar.consultas')}
         </button>

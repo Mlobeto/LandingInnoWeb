@@ -31,7 +31,7 @@
     "description":"Selezione del budget",
     "submit":"Inviare",
     "back":"Indietro",
-     "comentario":"Commento",
+    "comentario":"Commento",
     "downloadPdf":"Inviare e Scaricare"
   },
   "FilpCardContainer": {
@@ -58,17 +58,19 @@
   "Step2":{
   "title": "Di che tipo di sito web hai bisogno?",
   "button": "Prossimo",
-  "HaveDomain": "Do you have the Domain for your website?",
-  "NeedHosting": "Avete bisogno di hosting e dominio??"
+  "HaveDomain": "Avete un nome di dominio per il vostro sito web?",
+  "NeedHosting": "Avete bisogno di hosting e dominio??",
+  "Back": "Indietro",
+  "Next": "Seguente"
  },
   "Step3": {
     "title": "Integrazioni",
     "Blog": "Blog",
-     "Catalogo": "catalog",
-     "Delivery": "Delivery",
-     "Turnos": "Shift management",
+     "Catalogo": "Catalogare",
+     "Delivery": "Piattaforma di spedizione",
+     "Turnos": "Gestione dei turni",
      "CRM": "CRM",
-     "Payments": "Payments",
+     "Payments": "Piattaforma di pagamento",
      "WhatsApp": "Whatsapp",
      "Bot": "Bot"
   },

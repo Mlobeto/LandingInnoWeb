@@ -32,6 +32,7 @@
     "comentario":"Coments",
     "downloadPdf":"Send and Download"
     
+    
   },
 
   "FilpCardContainer": {
@@ -61,7 +62,9 @@
   "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
   "button": "Next",
   "HaveDomain": "Do you have the Domain for your website?",
-  "NeedHosting": "Do you need Hosting and domain?"
+  "NeedHosting": "Do you need Hosting and domain?",
+  "Back": "Back",
+  "Next": "Next"
  },
   "Step3": {
     "title": "Integrations",

@@ -1,57 +1,78 @@
-import { forwardRef, useRef, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useTranslation } from 'react-i18next';
-import jsPDF from 'jspdf';
-import Logo from '../assets/LogoBlanco.png'; // Ajusta la ruta a tu logo
+import { forwardRef, useRef, useState } from "react";
+import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
+import jsPDF from "jspdf";
+import Logo from "../assets/Logo.png"; // Ajusta la ruta a tu logo
 
-const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
+const ContactForm = forwardRef(({ quoteData }, ref) => {
   const { t } = useTranslation();
   const { option1, option2, option3, totalCost } = quoteData || {};
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState("");
 
-  const [description, setDescription] = useState(`
+  const description = `
     Tipo De Página: ${option1 || "Item no Seleccionado"}, 
     Hosting: ${option2 || "Item no Seleccionado"}, 
-    Integraciones: ${option3?.length > 0 ? option3.join(' -- ') : "Item no Seleccionado"}, 
-    Costo total: $${totalCost || "Item no Seleccionado"}`);
+    Integraciones: ${
+      option3?.length > 0 ? option3.join(" -- ") : "Item no Seleccionado"
+    }, 
+    Costo total: $${totalCost || "Item no Seleccionado"}`;
 
   const formRef = useRef(null);
 
+  const handleBack = () => {
+    window.location.reload();
+  };
+
   const handleDownloadPDF = () => {
     const doc = new jsPDF({
-      orientation: 'portrait',
-      unit: 'mm',
-      format: 'a5'
+      orientation: "portrait",
+      unit: "mm",
+      format: "a5",
     });
     const date = new Date().toLocaleDateString();
 
-    // Agregar el logo
+    // Cargar el logo de manera asíncrona
     const logo = new Image();
     logo.src = Logo;
-    doc.addImage(logo, 'PNG', 10, 10, 20, 10); // Tamaño reducido del logo
 
-    // Agregar fecha
-    doc.setFontSize(10);
-    doc.setTextColor(128, 128, 128); // Color gris
-    doc.text(`Fecha: ${date}`, 110, 20);
+    logo.onload = () => {
+      doc.addImage(logo, "PNG", 15, 20, 35, 10); // Cambiar tamaño del logo a 40x20 mm
 
-    // Título
-    doc.setFontSize(14);
-    doc.setTextColor(0, 0, 0); // Color negro
-    doc.text("Formulario de Contacto", 10, 35);
+      // Agregar fecha más abajo, separado del logo
+      doc.setFontSize(10);
+      doc.setTextColor(128, 128, 128); // Color gris
+      doc.text(`Fecha: ${date}`, 110, 40); // Ajustar la posición vertical (Y) a 40 mm
 
-    // Detalles del presupuesto
-    doc.setFontSize(10);
-    doc.text(`Tipo De Página: ${option1 || "Item no Seleccionado"}`, 10, 45);
-    doc.text(`Hosting: ${option2 || "Item no Seleccionado"}`, 10, 55);
-    doc.text(`Integraciones: ${option3?.length > 0 ? option3.join(', ') : "Item no Seleccionado"}`, 10, 65);
-    doc.text(`Costo total: $${totalCost || "Item no Seleccionado"}`, 10, 75);
+      // Título
+      doc.setFontSize(14);
+      doc.setTextColor(0, 0, 0); // Color negro
+      doc.text("Formulario de Contacto", 10, 60); // Ajustar la posición vertical a 60 mm
 
-    // Pie de página
-    doc.setFontSize(8);
-    doc.text("*Cotización basada en tu selección, comunícate con nosotros para solicitar una Demo.", 10, 140);
+      // Detalles del presupuesto, desplazados hacia abajo
+      doc.setFontSize(10);
+      doc.text(`Tipo De Página: ${option1 || "Item no Seleccionado"}`, 10, 70);
+      doc.text(`Hosting: ${option2 || "Item no Seleccionado"}`, 10, 80);
+      doc.text(
+        `Integraciones: ${
+          option3?.length > 0 ? option3.join(", ") : "Item no Seleccionado"
+        }`,
+        10,
+        90
+      );
+      doc.text(`Costo total: $${totalCost || "Item no Seleccionado"}`, 10, 100);
 
-    // Guardar el PDF
-    doc.save("cotizacion.pdf");
+      // Pie de página
+      doc.setFontSize(8);
+      doc.text(
+        "*Cotización basada en tu selección, comunícate con nosotros para solicitar una Demo.",
+        10,
+        140
+      );
+
+      // Guardar el PDF
+      doc.save("cotizacion.pdf");
+    };
   };
 
   const handleSubmit = async (e) => {
@@ -63,38 +84,63 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
     formValues.description = description;
 
     try {
-      const response = await fetch('https://landinginnoweb.onrender.com/emails/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formValues),
-      });
+      const response = await fetch(
+        "https://landinginnoweb.onrender.com/emails/send",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formValues),
+        }
+      );
 
       if (response.ok) {
         handleDownloadPDF();
-        alert('Formulario enviado con éxito');
-        alert('Te contactaremos a la brevedad');
-
-        // Limpiar el campo de descripción
-        setDescription('');
+        setAlertMessage("Formulario enviado con éxito");
+        setAlertType("success");
       } else {
-        alert('Error al enviar el formulario');
+        setAlertMessage("Error al enviar el formulario");
+        setAlertType("error");
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('Error al enviar el formulario');
+      console.error("Error:", error);
+      setAlertMessage("Error al enviar el formulario");
+      setAlertType("error");
     }
   };
 
   return (
-    <div ref={ref} className="bg-white p-8 xl:p-20">
-      <h2 className="text-xl font-bold mb-6">{t('ContactForm.title')}</h2>
+    <div ref={ref} className="">
+      <div className="w-full  dark:bg-slate-800 flex flex-col items-center mb-5 p-3 md:p-30">
+        <h2 className="text-[20px] font-bold items-center  p-2 text-white ">
+          {t("ContactForm.title")}
+        </h2>
+      </div>
+      {alertMessage && (
+        <div
+          className={`p-4 mb-4 text-sm ${
+            alertType === "success"
+              ? "text-green-700 bg-green-100"
+              : "text-red-700 bg-red-100"
+          } rounded-lg`}
+          role="alert"
+        >
+          {alertMessage}
+        </div>
+      )}
 
-      <form ref={formRef} onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="w-full bg-white  p-8 xl:p-20 grid grid-cols-1 md:grid-cols-2 gap-4"
+      >
         <div>
-          <label className="block text-sm font-medium text-gray-700" htmlFor="firstName">
-            {t('ContactForm.firstName')}
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="firstName"
+          >
+            {t("ContactForm.firstName")}
           </label>
           <input
             type="text"
@@ -104,8 +150,11 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700" htmlFor="lastName">
-            {t('ContactForm.familyname')}
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="lastName"
+          >
+            {t("ContactForm.familyname")}
           </label>
           <input
             type="text"
@@ -115,8 +164,11 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
           />
         </div>
         <div className="md:col-span-2">
-          <label className="block text-sm font-medium text-gray-700" htmlFor="email">
-            {t('ContactForm.email')}
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="email"
+          >
+            {t("ContactForm.email")}
           </label>
           <input
             type="email"
@@ -126,8 +178,11 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
           />
         </div>
         <div className="md:col-span-2">
-          <label className="block text-sm font-medium text-gray-700" htmlFor="phone">
-            {t('ContactForm.phone')}
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="phone"
+          >
+            {t("ContactForm.phone")}
           </label>
           <input
             type="tel"
@@ -137,8 +192,11 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
           />
         </div>
         <div className="md:col-span-2">
-          <label className="block text-sm font-medium text-gray-700" htmlFor="comentario">
-            {t('ContactForm.comentario')}
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="comentario"
+          >
+            {t("ContactForm.comentario")}
           </label>
           <input
             id="comentario"
@@ -147,8 +205,11 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
           />
         </div>
         <div className="md:col-span-2">
-          <label className="block text-sm font-medium text-gray-700" htmlFor="description">
-            {t('ContactForm.description')}
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="description"
+          >
+            {t("ContactForm.description")}
           </label>
           <textarea
             id="description"
@@ -163,16 +224,17 @@ const ContactForm = forwardRef(({ quoteData, onBack }, ref) => {
             type="submit"
             className="w-full mb-5 py-2 px-4 bg-orange-500 text-white font-semibold rounded-md shadow-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
           >
-            {t('ContactForm.downloadPdf')}
+            {t("ContactForm.downloadPdf")}
           </button>
+          <button
+          onClick={handleBack}
+          className="w-full py-2 px-4 bg-gray-300 text-white font-semibold rounded-md shadow-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+        >
+          {t("ContactForm.back")}
+        </button>
         </div>
+      
       </form>
-      <button
-        onClick={onBack}
-        className="w-full py-2 px-4 bg-gray-300 text-white font-semibold rounded-md shadow-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-      >
-        {t('ContactForm.back')}
-      </button>
     </div>
   );
 });
@@ -187,18 +249,6 @@ ContactForm.propTypes = {
   onBack: PropTypes.func,
 };
 
-ContactForm.displayName = 'ContactForm';
+ContactForm.displayName = "ContactForm";
 
 export default ContactForm;
-
-
-
-
-
-
-
-
-
-
-
-

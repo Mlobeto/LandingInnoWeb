@@ -23,9 +23,9 @@ const Header = () => {
         <a href="#services" className="p-2" onClick={() => setShowMenu(false)}>
           {t('Header.Servicios')}
         </a>
-        <a href="#about" className="p-2" onClick={() => setShowMenu(false)}>
+        {/* <a href="#about" className="p-2" onClick={() => setShowMenu(false)}>
           {t('Header.Nosotros')}
-        </a>
+        </a> */}
         <a href="#contact" className="p-2" onClick={() => setShowMenu(false)}>
           {t('Header.Contacto')}
         </a>

@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import Step1 from './Step1';
-import Step2 from './Step2';
-import Step3 from './Step3';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import Step1 from "./Step1";
+import Step2 from "./Step2";
+import Step3 from "./Step3";
 
 const QuoteWizard = ({ setQuoteData }) => {
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
-    option1: '',
-    option2: '',
+    option1: "",
+    option2: "",
     option3: [],
     totalCost: 0,
   });
@@ -20,16 +20,16 @@ const QuoteWizard = ({ setQuoteData }) => {
 
     // Step 1 costs
     switch (updatedData.option1) {
-      case 'Institutional':
+      case "Institutional":
         totalCost += 200;
         break;
-      case 'ecommerce':
+      case "ecommerce":
         totalCost += 250;
         break;
-      case 'Landing':
+      case "Landing":
         totalCost += 150;
         break;
-      case 'Complex':
+      case "Complex":
         totalCost += 300;
         break;
       default:
@@ -38,23 +38,27 @@ const QuoteWizard = ({ setQuoteData }) => {
 
     // Step 2 costs
     switch (updatedData.option2) {
-      case 'Solo Dominio':
+      case "Solo Dominio":
         totalCost += 10;
         break;
-      case 'Dominio y Hosting':
+      case "Dominio y Hosting":
         totalCost += 85;
         break;
       default:
         break;
     }
 
-    
     totalCost += updatedData.option3.reduce((acc, option) => {
       switch (option) {
-        case 'Payments':
-        case 'Whatsapp':
-        case 'Catalog':
-          acc += 80; 
+        case "Payments":
+        case "WhatsApp":
+        case "Catalogo":
+        case "CRM":
+        case "Delivery":
+        case "Turnos":
+        case "Blog":
+        case "Bot":
+          acc += 80;
           break;
         default:
           break;
@@ -63,9 +67,9 @@ const QuoteWizard = ({ setQuoteData }) => {
     }, 0);
 
     updatedData.totalCost = totalCost;
-    console.log('Updated formData:', updatedData);
-    setFormData(updatedData); 
-    setQuoteData(updatedData); 
+    console.log("Updated formData:", updatedData);
+    setFormData(updatedData);
+    setQuoteData(updatedData);
 
     setCurrentStep(currentStep + 1); // Move to next step
   };
@@ -74,11 +78,16 @@ const QuoteWizard = ({ setQuoteData }) => {
     setCurrentStep(currentStep - 1);
   };
 
-
   return (
     <div className="w-full p-9">
       {currentStep === 1 && <Step1 onNext={handleNext} />}
-      {currentStep === 2 && <Step2 onNext={handleNext} onBack={handleBack} totalCost={formData.totalCost} />}
+      {currentStep === 2 && (
+        <Step2
+          onNext={handleNext}
+          onBack={handleBack}
+          totalCost={formData.totalCost}
+        />
+      )}
       {currentStep === 3 && (
         <Step3
           onNext={handleNext}

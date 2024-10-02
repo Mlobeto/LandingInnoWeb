@@ -19,11 +19,11 @@
 "StickyNav":{
     "overview":"Vision General",
     "benefits":"Beneficios",
-    "request_demo":"Solicite una Demo"
+    "request_demo":"Agenda una reunión"
 
   },
 "ContactForm": {
-    "title":"Completa tus datos para que un asesor comercial se comunique con vos a la brevedad.",
+    "title":"Completa tus datos para mas información",
     "firstName":"Nombre",
     "familyname":"Apellido",
     "email":"Correo Electrónico",
@@ -32,7 +32,8 @@
     "submit":"Enviar",
     "comentario":"Comentarios",
     "downloadPdf":"Envia y Descarga",
-    "back": "Volver"
+    "back": "Volver",
+    "agendaConsulta": "Agenda una reunión"
   },
  "FilpCardContainer": {
 

@@ -21,7 +21,7 @@
     "request_demo": "Request a Demo"
   },
   "ContactForm": {
-    "title":"Enter your information so that a sales consultant can contact you as soon as possible.",
+    "title":"Complete your data for more information",
     "firstName":"First Name",
     "familyname":"Family Name",
     "email":"E-mail",
@@ -30,7 +30,8 @@
     "submit":"Submit",
     "back":"Back",
     "comentario":"Coments",
-    "downloadPdf":"Send and Download"
+    "downloadPdf":"Send and Download",
+    "agendaConsulta": "schedule a meeting"
     
     
   },
@@ -50,7 +51,7 @@
   "QuotteWizard": {},
   "Step1": {
     "title": "What type of website do you need?",
-    "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
+    "subtitle": "Select the options you need, then leave us your contact and download the budget",
     "Institucional": "Institutional WebSite",
     "E-commerce": "E-commerce or Catalog",
     "Landing": "Landing Page",
@@ -59,7 +60,7 @@
   },
   "Step2":{
   "title": "Do you need Hosting and Domain for your Web?",
-  "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
+  "subtitle": "Select the options you need, then leave us your contact and download the budget",
   "button": "Next",
   "HaveDomain": "Do you have the Domain for your website?",
   "NeedHosting": "Do you need Hosting and domain?",
@@ -68,7 +69,7 @@
  },
   "Step3": {
     "title": "Integrations",
-    "subtitle": "Selecciona las opciones que necesitas, luego dejanos tu contacto y descarga el presupuesto",
+    "subtitle": "Select the options you need, then leave us your contact and download the budget",
     "Blog": "Blog",
     "Catalogo": "catalog",
     "Delivery": "Delivery",

@@ -1,14 +1,18 @@
 import { forwardRef, useRef, useState } from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
+import { InlineWidget } from "react-calendly";
 import jsPDF from "jspdf";
-import Logo from "../assets/Logo.png"; // Ajusta la ruta a tu logo
+import Logo from "../assets/Logo.png"; 
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = forwardRef(({ quoteData }, ref) => {
   const { t } = useTranslation();
   const { option1, option2, option3, totalCost } = quoteData || {};
   const [alertMessage, setAlertMessage] = useState("");
   const [alertType, setAlertType] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const description = `
     Tipo De Página: ${option1 || "Item no Seleccionado"}, 
@@ -97,21 +101,55 @@ const ContactForm = forwardRef(({ quoteData }, ref) => {
 
       if (response.ok) {
         handleDownloadPDF();
-        setAlertMessage("Formulario enviado con éxito");
-        setAlertType("success");
+        toast.success("Formulario enviado con éxito", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          style: { backgroundColor: "#FF8C00", color: "#fff" }, // Naranja
+        });
       } else {
-        setAlertMessage("Error al enviar el formulario");
-        setAlertType("error");
+        toast.error("Error al enviar el formulario", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          style: { backgroundColor: "#FF8C00", color: "#fff" }, // Naranja
+        });
       }
     } catch (error) {
       console.error("Error:", error);
-      setAlertMessage("Error al enviar el formulario");
-      setAlertType("error");
+      toast.error("Error al enviar el formulario", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        style: { backgroundColor: "#FF8C00", color: "#fff" }, // Naranja
+      });
     }
+  };
+
+  const handleCalendlyClick = () => {
+    console.log("Abriendo Calendly...");
+    setShowModal(true);
+    console.log("showModal después de setShowModal: ", showModal);
   };
 
   return (
     <div ref={ref} className="">
+    <ToastContainer />
       <div className="w-full  dark:bg-slate-800 flex flex-col items-center mb-5 p-3 md:p-30">
         <h2 className="text-[20px] font-bold items-center  p-2 text-white ">
           {t("ContactForm.title")}
@@ -233,8 +271,31 @@ const ContactForm = forwardRef(({ quoteData }, ref) => {
           {t("ContactForm.back")}
         </button>
         </div>
+        <div className="md:col-span-2">
+          <button
+            type="button"
+            onClick={handleCalendlyClick}
+            className="w-full mb-5 py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600"
+          >
+            {t("ContactForm.agendaConsulta")}
+          </button>
+        </div>
       
       </form>
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-6 shadow-lg w-full max-w-lg">
+            <h2 className="text-lg font-semibold mb-4">Agenda tu consulta</h2>
+            <InlineWidget url="https://calendly.com/innowebsolutionsdev/30min" />
+            <button
+              className="mt-4 py-2 px-4 bg-blue-500 text-white rounded-lg"
+              onClick={() => setShowModal(false)}
+            >
+              Volver al inicio
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 });

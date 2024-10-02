@@ -23,7 +23,7 @@
 
   },
   "ContactForm": {
-    "title":"Inserite i vostri dati in modo che un consulente commerciale possa contattarvi al più presto.",
+    "title":"Inserisci i tuoi dati per maggiori informazioni",
     "firstName":"Nome",
     "familyname":"Apello",
     "email":"E-mail",
@@ -32,7 +32,8 @@
     "submit":"Inviare",
     "back":"Indietro",
     "comentario":"Commento",
-    "downloadPdf":"Inviare e Scaricare"
+    "downloadPdf":"Inviare e Scaricare",
+    "agendaConsulta": "Fissare una riunione"
   },
   "FilpCardContainer": {
 

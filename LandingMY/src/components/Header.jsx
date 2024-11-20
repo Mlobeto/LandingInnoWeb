@@ -10,7 +10,10 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between w-full p-4 h-[10vh] z-50 relative">
       <div className="xl:w-1/5 text-center">
-        <img src={Logo} alt="Logo" className="w-full h-full xl:static ml-4 mt-1" />
+        {/* Envolvemos el logo en un enlace */}
+        <a href="/">
+          <img src={Logo} alt="Logo" className="w-24 h-24 xl:static ml-12 mt-0 mb-8" />
+        </a>
       </div>
       <div className="border-l-2 border-gray-300 h-12 mx-10"></div>
       <button onClick={() => setShowMenu(!showMenu)} className="text-2xl xl:hidden z-50">

@@ -21,7 +21,7 @@ const Step1 = ({ onNext }) => {
 
   return (
     <div className="w-full flex flex-col items-center p-4 md:p-30">
-    <div className="w-full  dark:bg-slate-800 flex flex-col items-center mb-5 p-3 md:p-30">
+    <div className="w-full  dark:bg-blue-600 flex flex-col items-center mb-5 p-3 md:p-30">
       <h2 className="text-[20px] font-bold items-center  p-2 text-white">{t('Step1.title')}
       </h2>
       </div>

@@ -24,7 +24,7 @@ const Hero = () => {
             <a href="#contact" className="bg-blue-600 text-white px-8 py-4  ml-8 rounded-md text-xl font-semibold hover:bg-blue-700 shadow-lg transition duration-300">
               {t('hero.contact')}
             </a>
-            <a href="#plans" className="bg-green-600 text-white px-8 py-4 rounded-md text-xl font-semibold hover:bg-green-700 shadow-lg transition duration-300">
+            <a href="#plans" className="bg-blue-600 text-white px-8 py-4 rounded-md text-xl font-semibold hover:bg-green-700 shadow-lg transition duration-300">
               {t('hero.plans')}
             </a>
           </div>

@@ -21,9 +21,9 @@ const FlipCard = ({
     <div className="group perspective my-4 mb-0">
       <div className="flip-card relative w-70 h-160 md:w-80 md:h-180 rounded-lg shadow-lg transition-transform duration-500 preserve-3d">
         <div
-          className={`flip-card-front absolute  rounded-lg text-white flex flex-col items-center justify-center ${frontColor}`}
+          className={`flip-card-front absolute  rounded-lg text-black flex flex-col items-center justify-center ${frontColor}`}
         >
-          <div className="half-circle-icon"></div> {/* Medio círculo */}
+          <div className="half-circle-icon bg-customBlue"></div> {/* Medio círculo */}
           <div className="text-center mt-12">
             <MainIcon size={48} />
             <p className="text-2xl">{t(frontText)}</p>
@@ -39,7 +39,7 @@ const FlipCard = ({
           </div>
         </div>
         <div
-          className={`flip-card-back absolute w-full h-full rounded-lg text-white flex flex-col items-center justify-center p-4 sm:p-6 ${backColor}`}
+          className={`flip-card-back absolute w-full h-full rounded-lg text-black flex flex-col items-center justify-center p-4 sm:p-6 ${backColor}`}
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
             {t(backTitle)}
@@ -76,8 +76,8 @@ const FlipCardContainer = () => {
         backTitle="FlipCard.Primer Paso"
         backSteps={["FlipCard.Recolección de Requisitos y Planificación"]}
         backHighlight="FlipCard.Planificación"
-        frontColor="bg-customBlue"
-        backColor="bg-customRed"
+        frontColor="bg-white"
+        backColor="bg-white"
         mainIcon={FaProjectDiagram} // Icono principal para la primera tarjeta
       />
       <FlipCard
@@ -88,8 +88,8 @@ const FlipCardContainer = () => {
           
         ]}
         backHighlight="FlipCard.Desarrollo"
-        frontColor="bg-customGreen"
-        backColor="bg-customYellow"
+        frontColor="bg-white"
+        backColor="bg-white"
         mainIcon={FaCogs} 
       />
       <FlipCard
@@ -97,8 +97,8 @@ const FlipCardContainer = () => {
         backTitle="FlipCard.Tercer Paso"
         backSteps={["FlipCard.Pruebas Finales"]}
         backHighlight="FlipCard.Lanzamiento"
-        frontColor="bg-customPurple"
-        backColor="bg-customPink"
+        frontColor="bg-white"
+        backColor="bg-white"
         mainIcon={FaGlobe} 
       />
       <FlipCard
@@ -109,8 +109,8 @@ const FlipCardContainer = () => {
           
         ]}
         backHighlight="FlipCard.Mantenimiento"
-        frontColor="bg-customPurple"
-        backColor="bg-customBlue"
+        frontColor="bg-white"
+        backColor="bg-white"
         mainIcon={FaHandshake} 
       />
     </div>

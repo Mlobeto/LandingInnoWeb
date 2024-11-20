@@ -10,7 +10,7 @@ export const theme = {
     colors: {
       primary: "#706FE5",
       secondary: "#6b7280",
-      customBlue: "#445868",
+      customBlue: "#3a02f4",
       customRed: "#6b4946",
       customGreen: "#0f766e",
       customYellow: "#7c775f",

@@ -21,7 +21,7 @@ const Step1 = ({ onNext }) => {
 
   return (
     <div className="w-full flex flex-col items-center p-4 md:p-30">
-    <div className="w-full  dark:bg-blue-600 flex flex-col items-center mb-5 p-3 md:p-30">
+    <div className="w-full  dark:customBlue flex flex-col items-center mb-5 p-3 md:p-30">
       <h2 className="text-[20px] font-bold items-center  p-2 text-white">{t('Step1.title')}
       </h2>
       </div>
@@ -29,7 +29,7 @@ const Step1 = ({ onNext }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div
            className={`p-4 border rounded-lg cursor-pointer transform transition duration-300 ${
-            selectedOption === 'Institutional' ? 'border-yellow-500 bg-blue-500 scale-105' : 'border-gray-300'
+            selectedOption === 'Institutional' ? 'border-yellow-500 bg-customBlue scale-105' : 'border-gray-300'
           }`}
           onClick={() => handleOptionChange('Institutional')}
         >

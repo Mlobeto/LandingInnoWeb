@@ -23,7 +23,7 @@ const FlipCard = ({
         <div
           className={`flip-card-front absolute  rounded-lg text-black flex flex-col items-center justify-center ${frontColor}`}
         >
-          <div className="half-circle-icon bg-customBlue"></div> {/* Medio círculo */}
+          <div className="half-circle-icon bg-gray"></div> {/* Medio círculo */}
           <div className="text-center mt-12">
             <MainIcon size={48} />
             <p className="text-2xl">{t(frontText)}</p>

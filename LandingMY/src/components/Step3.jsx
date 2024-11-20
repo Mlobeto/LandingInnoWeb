@@ -58,7 +58,7 @@ const Step3 = ({ onNext, onBack, totalCost }) => {
 
   return (
     <div className="flex flex-col items-center p-4 md:p-30">
-    <div className="w-full  dark:bg-blue-600 flex flex-col items-center mb-5 p-3 md:p-30">
+    <div className="w-full  dark:bg-customBlue flex flex-col items-center mb-5 p-3 md:p-30">
       <h2 className="text-[20px] font-bold items-center  p-2 text-white">
         {t('Step3.title')}
       </h2>
@@ -78,7 +78,7 @@ const Step3 = ({ onNext, onBack, totalCost }) => {
       </div>
       <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-4">
         <div
-          className="bg-blue-500 h-2.5 rounded-full"
+          className="bg-customBlue h-2.5 rounded-full"
           style={{ width: `${(currentTotal / 1000) * 100}%` }}
         ></div>
       </div>

@@ -150,7 +150,7 @@ const ContactForm = forwardRef(({ quoteData }, ref) => {
   return (
     <div ref={ref} className="">
     <ToastContainer />
-      <div className="w-full  dark:bg-blue-600 flex flex-col items-center mb-5 p-3 md:p-30">
+      <div className="w-full  dark:bg-customBlue flex flex-col items-center mb-5 p-3 md:p-30">
         <h2 className="text-[20px] font-bold items-center  p-2 text-white ">
           {t("ContactForm.title")}
         </h2>
@@ -275,7 +275,7 @@ const ContactForm = forwardRef(({ quoteData }, ref) => {
           <button
             type="button"
             onClick={handleCalendlyClick}
-            className="w-full mb-5 py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600"
+            className="w-full mb-5 py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-customBlue"
           >
             {t("ContactForm.agendaConsulta")}
           </button>

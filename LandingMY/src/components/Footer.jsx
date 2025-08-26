@@ -1,14 +1,16 @@
-import LogoBlanco from '../assets/LogoBlanco.png'; // Asegúrate de ajustar el path a tu logo
+import Logo from '../assets/Logo.png';
+
 
 const Footer = () => {
   return (
-    <footer className="bg-footer p-6 xl:p-8">
-      <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <footer className="bg-black border-t border-gray-800 p-8">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <img
-          src={LogoBlanco}
+          src={Logo}
           alt="Logo"
-          className="h-auto w-32 md:w-40 lg:w-48 xl:w-56"
+          className="h-auto w-20 md:w-24 lg:w-28 xl:w-28"
         />
+        <p className="text-gray-500 text-sm mt-4 md:mt-0">© {new Date().getFullYear()} Innoweb Solutions. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

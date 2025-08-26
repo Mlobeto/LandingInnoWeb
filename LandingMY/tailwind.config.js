@@ -10,18 +10,16 @@ export const theme = {
     colors: {
       primary: "#706FE5",
       secondary: "#6b7280",
-      customBlue: "#3a02f4",
+      customBlue: "#445868",
       customRed: "#6b4946",
       customGreen: "#0f766e",
       customYellow: "#7c775f",
       customPurple: "#0f766e",
       customPink: "#059669",
       textWhite: "white",
-      footer: "#49465a"
+      footer: "#49465a",
+      azul:"#3A02F4"
     },
-    fontFamily: {
-        nunito: ['Nunito', 'sans-serif'], // Definir la fuente Nunito
-      },
   },
 };
 export const plugins = [];

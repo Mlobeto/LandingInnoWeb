@@ -55,6 +55,9 @@
   border-top: none; /* Solo mostrar los bordes laterales e inferior */
   z-index: 10; /* Asegura que el medio círculo esté por encima del resto del contenido */
 }
+.text-outline {
+  -webkit-text-stroke: 1px #fff;
+}
 
 
 

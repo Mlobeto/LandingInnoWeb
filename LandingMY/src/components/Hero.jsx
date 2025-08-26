@@ -1,39 +1,30 @@
-import BackgroundImage from "../assets/hero.png"; 
+import BackgroundImage from "../assets/fondo.png"; 
 import { useTranslation } from 'react-i18next';
+
 
 const Hero = () => {
   const { t } = useTranslation();
-
   return (
     <section
-      className="bg-cover bg-center h-[85vh]"
-      style={{ backgroundImage: `url(${BackgroundImage})` }}
+      className="relative bg-black bg-cover bg-center h-[80vh] flex items-center justify-center"
+      style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(${BackgroundImage})` }}
     >
-      <div className="flex items-center h-full bg-black bg-opacity-60 px-6">
-        <div className="text-left">
-          <h1 className="text-white text-4xl md:text-5xl font-extrabold mb-4 ml-8 drop-shadow-lg">
-            {t('hero.title')}
-          </h1>
-          <p className="text-white text-3xl md:text-4xl font-bold mb-2 ml-8 drop-shadow-lg">
-            {t('hero.subtitle1')}
-          </p>
-          <p className="text-white text-3xl md:text-4xl font-bold mb-6 ml-8 drop-shadow-lg">
-            {t('hero.subtitle2')}
-          </p>
-          <div className="flex space-x-4">
-            <a href="#contact" className="bg-customBlue text-white px-8 py-4  ml-8 rounded-md text-xl font-semibold hover:bg-blue-700 shadow-lg transition duration-300">
-              {t('hero.contact')}
-            </a>
-            <a href="#plans" className="bg-customBlue text-white px-8 py-4 rounded-md text-xl font-semibold hover:bg-green-700 shadow-lg transition duration-300">
-              {t('hero.plans')}
-            </a>
-          </div>
-        </div>
+      <div className="flex flex-col items-center justify-center w-full h-full px-6">
+        <h1 className="text-white text-5xl md:text-6xl font-extrabold mb-6 text-center tracking-tight drop-shadow-xl">
+          {t('hero.title')}
+        </h1>
+        <p className="text-gray-300 text-2xl md:text-3xl font-light mb-4 text-center max-w-2xl">
+          {t('hero.subtitle1')}
+        </p>
+        <p className="text-gray-400 text-xl md:text-2xl font-normal mb-8 text-center max-w-2xl">
+          {t('hero.subtitle2')}
+        </p>
+        <a href="#contact" className="bg-white text-black px-10 py-4 rounded-full text-xl font-bold shadow-lg hover:bg-primary hover:text-white transition duration-300">
+          {t('hero.contact')}
+        </a>
       </div>
     </section>
   );
 };
 
 export default Hero;
-
-
